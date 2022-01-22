@@ -1,0 +1,47 @@
+.menu__overlay{
+    position:fixed;
+    overflow-y: scroll;
+    top:0;
+    bottom:0;
+    right:0;
+    padding-left: 20px;
+    padding-top: 70px;
+    padding-bottom:20px;
+    padding-right: 20px;
+    background-color:white;
+    z-index: 1;
+    display:flex;
+    flex-direction: column;
+    gap: 25px;
+    min-width: 280px;
+}
+.menu__hidden{
+    display: none;
+}
+
+.menu__overlay::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .menu__overlay {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+@media(max-width:800px)
+{
+    .menu__hidden{
+        display:flex;
+        flex-direction: column;
+        gap: 25px;
+        min-width: 280px;
+    }
+    .menu__overlay{
+        overflow-x: hidden;
+        max-width: 500px;
+        position: absolute;
+        max-width: 100px;
+        padding-top: 100px;
+        font-size: 12px;
+        align-items: left;
+    }
+}

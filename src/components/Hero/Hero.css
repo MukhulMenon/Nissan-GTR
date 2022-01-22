@@ -1,0 +1,89 @@
+.heroBlock{
+    background: url("https://www.teahub.io/photos/full/170-1704499_super-car-nissan-gt-r-r35..jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position:absolute;
+  top:0px;
+  right:0;
+  bottom: 0;
+  left:0;
+  display:grid;
+  place-items: center;
+}
+
+.hero__info{
+    display:flex;
+    flex-direction: column;
+    height:360px
+}
+.hero__infoText{
+    text-align: center;
+    flex:1;
+
+}
+
+.hero__infoText >h1{
+    color:#000;
+    font-weight: 800;
+    font-size: 38px;
+}
+.hero__infoText >h4{
+    font-weight: 400;
+    font-size: 15px;
+    color:#000;
+}
+
+.hero__infoText > h4 > span {
+    /* padding-bottom: 4px; */
+    padding-top: 15px;
+    border-bottom: 1px solid #5c5d61;
+    color: #5c5d61;
+    cursor: pointer;
+  }
+  
+  .hero__infoText > h4 > span:hover {
+    border-bottom-width: 2px;
+    color: black;
+  }
+
+  .hero__actions{
+      margin-top:330px;
+      display:flex;
+      gap:20px;
+  }
+
+  .hero__actions >button {
+      border: none;
+      width: 260px;
+      cursor:pointer;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      border-radius: 10px;
+      font-weight: 600;
+      outline: none;
+  }
+
+  .hero-btn-primary{
+      background-color:#393c41;
+      color: #fff;
+      opacity: 0.9;
+  }
+  .hero-btn-primary:hover{
+    background-color: #fff;
+    color: black;
+    opacity: 0.9;
+  }
+  .hero-btn-secondary{
+      background-color: #fff;
+      color: black;
+      opacity: 0.8;
+  }
+   .hero-btn-secondary:hover{
+    background-color: #000;
+    color: #fff;
+    opacity: 0.8;
+  }
+
+ 
