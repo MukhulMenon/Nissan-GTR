@@ -9,7 +9,7 @@ function Menu() {
       <MenuItem title='History'/>
       <MenuItem title='Specifications'/>
       <MenuItem title='Features'/>
-      <MenuItem title='Options'/>
+      <MenuItem title='Customize'/>
       <MenuItem title='Nissan Account'/>
       <MenuItem title='Purchase'/> </div>
       <MenuItem title='Test Drive'/>

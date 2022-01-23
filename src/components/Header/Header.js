@@ -16,7 +16,7 @@ function Header({isMenuOpen,setIsMenuOpen}) {
       <Link to ='/'>History</Link>
       <Link to ='/'>Specifications</Link>
       <Link to ='/'>Features</Link>
-      <Link to ='/'>Options</Link>
+      <Link to ='/'>Customize</Link>
     </div>
     <div className="header__right">
       <Link to ='/' className={isMenuOpen && 'header__link-hidden'}>Purchase</Link>
