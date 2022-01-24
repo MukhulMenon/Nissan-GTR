@@ -13,10 +13,10 @@ function Header({isMenuOpen,setIsMenuOpen}) {
       </Link>
     </div>
     <div className="header__links">
-      <Link to ='/'>History</Link>
-      <Link to ='/'>Specifications</Link>
-      <Link to ='/'>Features</Link>
-      <Link to ='/'>Customize</Link>
+      <Link to ='/'>Skyline GT-R-R32</Link>
+      <Link to ='/'>Skyline GT-R-R33</Link>
+      <Link to ='/'>Skyline GT-RM Spec-R34</Link>
+      <Link to ='/'>Nissan GT-R R35</Link>
     </div>
     <div className="header__right">
       <Link to ='/' className={isMenuOpen && 'header__link-hidden'}>Purchase</Link>

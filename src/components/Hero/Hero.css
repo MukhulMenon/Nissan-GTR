@@ -86,4 +86,16 @@
     opacity: 0.8;
   }
 
- 
+@media(max-width:767px){
+.hero__actions >button {
+    border: none;
+    width: 150px;
+    cursor:pointer;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    outline: none;
+}
+
+}

@@ -11,27 +11,28 @@ import { login } from '../../features/userSlice';
 function Signup() {
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
-    const [FName,setFName]=useState('')
-    const [LName,setLName]=useState('')
+    const [fName,setFName]=useState('')
+    const [lName,setLName]=useState('')
     const dispatch = useDispatch()
     const history = useHistory()
 
     const signUp =(e) =>{
-        if(!FName) {
+        e.preventDefault()
+        if(!fName) {
             return alert('Please enter a First Name')
         }
-        if(!LName) {
+        if(!lName) {
             return alert('Please enter a Last Name')
         }
         auth.createUserWithEmailAndPassword(email,password).then((userAuth)=>{
             userAuth.user.updateProfile({
-                displayName: FName,
+                displayName: fName,
             }).then(()=>{
                 dispatch(
                     login({
                     email:userAuth.user.email,
                     uid:userAuth.user.uid,
-                    displayName: FName,
+                    displayName: fName,
                 })
                 )
                 history.push('/nissanAccount')
@@ -54,10 +55,10 @@ function Signup() {
       <div className="signup__info">
           <h1>Create Account</h1>
           <form className="signup__form">
-            <label htmlFor="FName">First Name</label>
-            <input type="text" id ='fName' value ={FName} onChange={(e)=> setFName(e.target.value)} />
-            <label htmlFor="LName">Last Name</label>
-            <input type="text" id ='lName' value ={LName} onChange={(e)=> setLName(e.target.value)} />
+            <label htmlFor="fName">First Name</label>
+            <input type="text" id ='fName' value ={fName} onChange={(e)=> setFName(e.target.value)} />
+            <label htmlFor="lName">Last Name</label>
+            <input type="text" id ='lName' value ={lName} onChange={(e)=> setLName(e.target.value)} />
             <label htmlFor="email">Email Address</label>
             <input type="email" id ='email' value ={email} onChange={(e)=> setEmail(e.target.value)} />
             <label htmlFor="password">Password</label>
