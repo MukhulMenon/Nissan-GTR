@@ -10,6 +10,7 @@ import { login, logout, selectUser } from './features/userSlice.js';
 import Signup from './components/Signup/Signup.js';
 import NissanAccount from './components/Account/NissanAccount.js';
 import { auth } from './firebase/firebase.js';
+import Purchase from './components/Purchase/Purchase.js';
 
 function App() {
   const user=useSelector(selectUser)
@@ -50,6 +51,12 @@ function App() {
          <Route exact path='/nissanAccount'>
          {!user ? (<Redirect to ='/login'/>) : (
          <><NissanAccount isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
+         {isMenuOpen && <Menu />}
+         </>)}
+         </Route>
+         <Route exact path="/purchase">
+         {!user ? (<Redirect to ='/login'/>) : (
+         <><Purchase isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
          {isMenuOpen && <Menu />}
          </>)}
          </Route>

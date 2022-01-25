@@ -22,7 +22,7 @@ const signIn=(e) =>{
             uid:userAuth.user.uid,
             displayName: userAuth.user.displayName,
         }))
-        history.push('/nissanAccount')
+        history.push('/purchase')
     }).catch((error) => alert(error.message))
 }
 

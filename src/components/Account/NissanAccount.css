@@ -45,13 +45,14 @@
     justify-content:space-between;
     align-items:center;
     padding: 60px 140px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .nissanAccount__person >h4{
 font-weight: 500;
 text-transform:capitalize;
 font-size:x-large;
+margin-bottom: 60px;
 }
 
 .nissanAccount__infoRight{
@@ -78,6 +79,78 @@ font-weight: 500;
     padding:40px;
 }
 
+.nissanAccount__form{
+    display:flex;
+    flex-direction: column;
+    
+    }
+
+.nissanAccount__user{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nissanAccount__user>h1{
+    margin-bottom: 30px;
+    background-color:#f4f4f4;
+    border: 1px solid #f4f4f4;
+    outline: none;
+    border-radius: 15px;
+    padding:12px;
+    color:#393c41;
+    font-weight:600;
+
+}
+.nissanAccount__actions{
+    display:flex;
+    flex-direction: row;
+    gap:50px;
+    align-items: center;
+}
+.nissanAccount__login{
+    background-color: #3e6ae1;
+    border:none;
+    width:230px;
+    padding:12px 40px;
+    border-radius:30px;
+    color:#fff;
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    cursor:pointer;
+    outline: none;
+    margin-bottom :30px;
+    transition: all 0.4s;
+    align-items:center;
+    
+}
+
+.nissanAccount__login:hover{
+    background-color: #3457b1;
+}
+
+.nissanAccount__logout{
+    background-color :transparent;
+    border: 1px solid #000;
+    width:230px;
+    padding:12px 40px;
+    border-radius: 30px;
+    /* text-transform: uppercase;  */
+    font-weight: 600px;
+    margin-bottom :30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    outline:none;
+    
+}
+
+.nissanAccount__logout:hover{
+    background-color :#171a20;
+    color:#fff;
+}
 
 
 @media (max-width:1100px){
@@ -114,6 +187,6 @@ font-weight: 500;
             margin-left:-100px
     }
     .nissanAccount__logo>a>img{
-        width:45px;
+        width:75px;
     }
 }

@@ -9,13 +9,13 @@
     display:flex;
     flex-direction: column;
     gap: 70px; 
+    overflow-x : hidden;
   }
 
 .signup__header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position:sticky;
     top: 0;
 
 }
@@ -107,3 +107,8 @@ flex-direction: column;
     color:#000;
 }
 
+@media(max-width:500px){
+    .signup__logo > a > img{
+        width:75px;
+    }
+}

@@ -11,6 +11,8 @@
   left:0;
   display:grid;
   place-items: center;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .hero__info{
@@ -97,5 +99,11 @@
     font-weight: 600;
     outline: none;
 }
-
 }
+@media (max-width: 500px) {
+    .hero__actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }

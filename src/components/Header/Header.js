@@ -13,13 +13,9 @@ function Header({isMenuOpen,setIsMenuOpen}) {
       </Link>
     </div>
     <div className="header__links">
-      <Link to ='/'>Skyline GT-R-R32</Link>
-      <Link to ='/'>Skyline GT-R-R33</Link>
-      <Link to ='/'>Skyline GT-RM Spec-R34</Link>
-      <Link to ='/'>Nissan GT-R R35</Link>
     </div>
     <div className="header__right">
-      <Link to ='/' className={isMenuOpen && 'header__link-hidden'}>Purchase</Link>
+      <Link to ='/purchase' className={isMenuOpen && 'header__link-hidden'}>Purchase</Link>
       <Link to ='/login' className={isMenuOpen && 'header__link-hidden'}>Nissan Account</Link>
       <div className='header__menu' 
       onClick={()=> setIsMenuOpen(!isMenuOpen)}>

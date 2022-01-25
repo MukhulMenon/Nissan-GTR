@@ -26,16 +26,16 @@ function Signup() {
         }
         auth.createUserWithEmailAndPassword(email,password).then((userAuth)=>{
             userAuth.user.updateProfile({
-                displayName: fName,
+                displayName: fName + " " +lName,
             }).then(()=>{
                 dispatch(
                     login({
                     email:userAuth.user.email,
                     uid:userAuth.user.uid,
-                    displayName: fName,
+                    displayName: fName + " "+lName,
                 })
                 )
-                history.push('/nissanAccount')
+                history.push('/purchase')
             })
         })
         .catch((error)=>alert(error.message))

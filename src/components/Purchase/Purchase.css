@@ -1,0 +1,145 @@
+*>a{
+    cursor: pointer;
+}
+.Purchase__header{
+    padding:7px 20px;
+    padding-top: 15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color : #000;
+    color: #fff;
+}
+.Purchase__links{
+    display:flex;
+    gap:30px;
+    align-items: center;
+    
+}
+
+.Purchase__logo>a>img{
+    object-fit: contain;
+    width: 90px;
+    filter:brightness(0) invert(1);
+}
+
+.Purchase__links> a{
+    color:#fff;
+    text-decoration: none;
+    font-weight:500;
+    font-size: 15px;
+    z-index:0;
+    
+}
+
+.Purchase__menu{
+    z-index: 2;
+}
+
+.Purchase__menu >.MuiSvgIcon-root{
+    cursor:pointer;
+}
+
+.Purchase__close{
+    color:#000
+}
+.Purchase__info{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 60px 140px;
+    padding-bottom: 10px;
+}
+
+.Purchase__person >h4{
+font-weight: 500;
+text-transform:capitalize;
+font-size:x-large;
+}
+
+.Purchase__infoRight{
+    display:flex;
+    gap:20px;
+
+}
+
+.Purchase__infoRight >a{
+    text-decoration: none;
+    color:#393c41;
+    font-size: medium;
+    transition: all 0.2s;
+    text-transform:capitalize;
+
+}
+.Purchase__infoRight >a:hover{
+color:#000;
+font-weight: 500;
+}
+
+.Purchase__car{
+    display:grid;
+    place-items: center;
+    gap: 30px;
+    padding:40px;
+}
+.Purchase__top >a >button{
+    background-color :transparent;
+    border: 1px solid #000;
+    width: 10%;
+    padding:6px 9px;
+    border-radius: 30px;
+    /* text-transform: uppercase;  */
+    font-weight: 600px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    outline:none;
+    position: fixed;
+    bottom:40px;
+    right:40px;
+}
+
+.Purchase__top > a >button:hover{
+    background-color :#171a20;
+    color:#fff;
+}
+
+
+@media (max-width:1100px){
+    .Purchase__links >a{
+        display:none;
+    }
+    .Purchase__person >h4{
+        font-weight: 500;
+        text-transform:capitalize;
+        font-size:large;
+        }
+        .Purchase__top >a>button{
+            font-size: 12px;
+        }
+    }
+    
+@media (max-width:650px){
+    .Purchase__links >a{
+        display:none;
+    }
+    .Purchase__person >h4{
+        font-weight: 500;
+        text-transform:capitalize;
+        font-size:small;
+        }
+        .Purchase__top >a>button{
+            font-size: 8px;
+        }
+    }
+    
+
+    
+    @media (max-width:480px){
+        .Purchase__person >h4{
+            font-size:medium;
+            margin-left:-100px
+    }
+    .Purchase__logo>a>img{
+        width:75px;
+    }
+}
