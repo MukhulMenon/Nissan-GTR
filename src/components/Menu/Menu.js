@@ -14,7 +14,9 @@ function Menu() {
       <MenuItem title='Purchase'/></Link> </div>
       <MenuItem title='Test Drive'/>
       <MenuItem title='Find us'/>
+      <a href="https://github.com/MukhulMenon/Nissan-GTR">
       <MenuItem title='Support'/>
+      </a>
       <MenuItem title='India'/>
       </div>
 
