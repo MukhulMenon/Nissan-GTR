@@ -134,3 +134,28 @@ color :#393c41;
             margin-top: 0;
         }
 }
+@media (max-width:280px){
+    .car__img >img{
+        object-fit:contain;
+        width:130px;
+        height: 150px;
+    }
+    .car{
+        width: 220px;
+    }
+    .car__info{
+        max-width:150px;
+        }
+        .car__actions{
+            gap:10px;
+        }
+        .car__actions >button{
+            width:100px;
+            margin-bottom: 30px;
+            font-size: 8px;
+        }
+        .car__model{
+            font-size: medium;
+            margin-top: 0;
+        }
+}

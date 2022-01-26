@@ -89,20 +89,19 @@ font-weight: 500;
     display:flex;
     flex-direction: column;
     gap: 20px;
-    min-width: 330px;
+    max-width: auto ;
     margin-left: auto;
     margin-right: auto;
 }
 
 .nissanAccount__user>h1{
     margin-bottom: 30px;
-    background-color:#f4f4f4;
-    border: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
     outline: none;
-    border-radius: 15px;
-    padding:12px;
     color:#393c41;
-    font-weight:600;
+    font-weight:500;
+    font-size: 14px;
+    max-width: 500px;
 
 }
 .nissanAccount__actions{
@@ -162,6 +161,17 @@ font-weight: 500;
         text-transform:capitalize;
         font-size:large;
         }
+        .nissanAccount__login{
+            width:200px;
+            padding:10px 36px;
+            font-size: 10px;
+        }
+        .nissanAccount__logout{
+            width:200px;
+            padding:10px 36px;
+            font-size: 10px;
+        }
+
     }
     
 @media (max-width:650px){
@@ -176,6 +186,15 @@ font-weight: 500;
         .nissanAccount__infoRight >a{
             font-size: x-small;
 
+        } .nissanAccount__login{
+            width:125px;
+            padding:8px 30px;
+            font-size: 8px;
+        }
+        .nissanAccount__logout{
+            width:125px;
+            padding:8px 30px;
+            font-size: 8px;
         }
     }
     
@@ -188,5 +207,16 @@ font-weight: 500;
     }
     .nissanAccount__logo>a>img{
         width:75px;
+    }
+    .nissanAccount__login{
+        width:80px;
+        padding:6px 24px;
+    }
+    .nissanAccount__logout{
+        width:80px;
+        padding:6px 24px;
+    }
+    .nissanAccount__infoRight{
+    margin-right: -80px;
     }
 }

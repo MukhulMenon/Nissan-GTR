@@ -130,6 +130,16 @@ font-weight: 500;
         .Purchase__top >a>button{
             font-size: 8px;
         }
+        .Purchase__top >a >button{
+            font-weight: 500px;
+            bottom:40px;
+            right:40px;
+        }
+        
+        .Purchase__top > a >button:hover{
+            background-color :#171a20;
+            color:#fff;
+        }
     }
     
 
@@ -142,4 +152,27 @@ font-weight: 500;
     .Purchase__logo>a>img{
         width:75px;
     }
+    .Purchase__top >a >button{
+        font-weight: 500px;
+        bottom:30px;
+        right:20px;
+    }
+    
+}
+@media (max-width:280px){
+    .Purchase__person >h4{
+        font-size:medium;
+        margin-left:-100px
+}
+.Purchase__logo>a>img{
+    width:75px;
+}
+.Purchase__top >a>button{
+    font-size: 6px;
+}
+.Purchase__top >a >button{
+    font-weight: 500px;
+    bottom:30px;
+    right:20px;
+}
 }
