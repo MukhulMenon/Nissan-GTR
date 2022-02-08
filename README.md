@@ -13,7 +13,7 @@
 #### - Sign up authentication using Firebase
 #### - Routing using React-router
 
-### All portions of the project are differentiated into componentes for easy editing
+### All portions of the project are differentiated into components for easy editing
 
 #### Hosted Link : https://nissan-gtr-page.web.app/
 
