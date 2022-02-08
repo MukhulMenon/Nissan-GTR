@@ -1,6 +1,6 @@
 # Nissan GT-R Lineup
 
-## This is a personal project created using React Redux, viualising a Showcase website for the Nissan GT-R series since 2000.
+## This is a personal project created using React Redux, visualising a Showcase website for the Nissan GT-R series since 2000.
 
 ### Pages :
 #### 1. Hero landing page
